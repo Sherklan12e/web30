@@ -12,5 +12,6 @@ urlpatterns = [
     path('caseros/', caseros, name='caseros'),
     path('packs', packs , name='packs'),
     path('detalles/<int:detalles>', detalles, name='detalles'),
-] + urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     
