@@ -24,5 +24,18 @@
 
 
 {% include 'layouts/footer.html' %}
+{% comment %} <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script> {% endcomment %}
+<script>
+    const mobileMenuToggle = document.querySelector('[data-collapse-toggle="mobile-menu-2"]');
+    const mobileMenu = document.getElementById('mobile-menu-2');
+
+    mobileMenuToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+
 </body>
 <html>
