@@ -133,7 +133,6 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-STATICFILES_DIRS = [BASE_DIR / "static"] # new
 STATIC_ROOT = BASE_DIR / "staticfiles" # new
 
 # Default primary key field type
