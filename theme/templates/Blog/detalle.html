@@ -7,7 +7,7 @@
     <div class="flex justify-center items-center h-screen mt-8">
       <div class="max-w-lg w-full bg-white rounded-lg overflow-hidden shadow-md">
         {% if post.imagen %}
-          <img src="{{ post.imagen.url }}" alt="{{ post.title }}" class=" w-full object-contain">
+          <img src="{{ post.imagen }}" alt="{{ post.title }}" class=" w-full object-contain">
         {% else %}
           <div class="bg-gray-200 h-64 flex items-center justify-center">
             <span class="text-gray-400 text-sm">Imagen no disponible</span>
